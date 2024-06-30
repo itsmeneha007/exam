@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <div class="task-form">
+            <input type="text" id ="title" placeholder ="Title">
+            <input type="text" id ="description" placeholder ="Description">
+            <input type="text" id ="status" placeholder ="Status">
+            <input type="datetime-local" id ="duedate" placeholder ="Due date">
+            <button id="addTask">Add Task</button>
+        </div>
+
+        <div class="filter">
+            <select id="filterstatus">
+                <option value="">All Statuses</option>
+                <option value="Open">Open</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Closed">Closed</option>
+
+            </select>
+
+            <select id="filterPriority">
+                <option value="">All priorities</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+
+        <div class="tasks-container" id="tasksContainer"></div>
+        <div class="pagination">
+            <button id="prevpage">Previous</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Next</button>
+        </div>
+
+        
+        <script src="script.js"></script>
+    
+    </div>
+    
+</body>
+</html>

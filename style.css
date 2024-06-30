@@ -1,0 +1,57 @@
+
+
+body {
+    font-family: arial;
+}
+
+.container {
+    width:100%;
+    margin:auto;
+    padding:15px;
+    background-color: rgb(114, 205, 205);
+    border-radius: 10px;
+}
+
+.task-form input,
+.task-form button{
+    margin:10px;
+    padding: 10px;
+}
+
+.task-form button {
+    padding:10px 20px;
+    gap:10px;
+}
+
+.fliter select {
+    margin :10px;
+    padding:20px;
+}
+
+.tasks-container {
+    margin-top:20px;
+}
+
+.task-card {
+    padding:20px;
+    margin-bottom:20px;
+    border:2px red;
+    border-radius: 5px;
+}
+
+.task-card.high-priority {
+    border-color:red;
+}
+
+.task-card.medium-priority {
+    border-color:brown;
+}
+
+.task-card.low-priority {
+    border-color:green;
+}
+
+.task-card button {
+    margin:10px;
+    padding:5px 10px;
+}
